@@ -1,0 +1,390 @@
+*{
+ margin: 0;
+ padding: 0;
+ font-family: Arial, Helvetica, sans-serif;
+ box-sizing: border-box;
+}
+i{
+    display: none;
+}
+body{
+    width: 100%;
+}
+/*Button setting*/
+a, button{
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+}
+/*Header Section*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0d0d0d;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+.header div{
+    flex: auto;
+}
+.logo {
+  font-size: 1.5rem;
+}
+
+.hamburger {
+  font-size: 1.3rem;
+  cursor: pointer;
+  display: none;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+}
+.nav-menu a:hover {
+    border-bottom: #fff 3px solid;
+    color: #ff0000;
+}
+/*Hero Section*/
+.hero{
+    background-image: url(desktop_Hero.png);
+    width: 100%;
+    height: 840px;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 75px;
+}
+.hero-heading{
+    font-size: 100px;
+}
+.hero-txt{
+    font-weight: 300;
+    font-size: 25px;
+}
+.hero .order-btn{
+    color: #fff;
+    background-color: rgb(254, 0, 0);
+    width: 150px;
+    height: 45px;
+    border: 4px solid #000;
+    border-radius: 35px;
+    font-weight: bold;
+}
+.hero .order-btn:hover{
+    background-color: rgb(0, 0, 0);
+    border: 4px solid #ff0000;
+    outline: 1.5px solid #000000;
+}
+.hero div{
+    padding-left: 75px;
+}
+.hero .hero-heading_mobile{
+    display: none;
+}
+/*About Section*/
+.abt-sec{
+    display: flex;
+    width: 100%;
+    height: 400px;
+    
+}
+.abt-sec .burger-image, .abt-txt{
+    width: 100%;
+    flex: auto;
+}
+.abt-sec .burger-image{
+    background-image: url(burger.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+.abt-sec .abt-txt{
+    background-color: rgb(245, 50, 50);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 45px;
+    gap: 45px;
+    color: #fff;
+    font-size: 20px;
+}
+.abt-sec .abt-txt .abt-btn{
+    background-color: #000;
+    color: #fff;
+    width: 150px;
+    height: 45px;
+    border: 4px solid #ffffff;
+    border-radius: 35px;
+    font-weight: bold;
+    outline: 1.5px solid #000000;
+}
+.abt-sec .abt-txt .abt-btn:hover{
+    background-color: #ff0000;
+    outline: 1.5px solid #000000;
+    cursor: pointer;
+}
+.catalog-sec{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+    background-color: lightgray;
+    align-items: center;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    gap: 30px;
+
+}
+.catalog-sec h2{
+    font-size: 35px;
+}
+.catalog-sec p{
+    font-weight: 500;
+}
+.catalog-sec div{
+    flex: auto;
+    
+}
+.catalog-menu{
+    display: flex;
+    width: 100%;
+    height: 350px;
+    gap: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    justify-content: center;
+}
+.catalog-sec .catalog-menu div{
+    flex: auto;
+    height: 250px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 30px;
+    padding-top: 25px;
+ 
+}
+.catalog-sec .catalog_btn button{
+    color: #fff;
+    background-color: red;
+    border: 4px solid #ffffff;
+    outline: 1.5px solid #ff0000;
+    border-radius: 25px;
+    width: 185px;
+    height: 50px;
+    font-weight: bold;
+}
+.catalog-sec .catalog_btn button:hover{
+    outline: 1.5px solid #000000;
+}
+.catalog-sec .catalog_btn :hover {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    cursor: pointer;
+}
+.review_container{
+    background-color: #bc1823;
+    width: 100%;
+    height: 500px;
+}
+.review_header{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #fff;
+    font-weight: bold;
+}
+.reviews{
+    display: flex;
+    justify-content: center;
+}
+.review_container .reviews .review_col{
+    flex: auto;
+    color: #fff;
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    line-height: 1.5;
+}
+.review_container .reviews .review_col .review_profiles img{
+    border-radius: 75px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/*Footer_Section*/
+.footer_sec{
+    display: flex;
+    width: 100%;
+    height: 450px;
+    background-color: black;
+    color:white;
+    justify-content: center;
+}
+.footer_col_left{
+    width: 70%;
+    background-color: grey;
+    background-image: url("https://townsquare.media/site/190/files/2024/05/attachment-Coffee-Please-12.jpg?w=780&q=75");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.footer_col_right{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    padding-left: 45px;
+    line-height: 1.4;
+}
+.footer_sec .footer_col_right .email-sec{
+    text-align: center;
+    font-weight: bold;
+}
+/* Mobile Responsive */
+@media (min-width: 350px) and (max-width: 985px) {
+    /*Hero Section*/
+    .hero div{
+        padding-left: 0;
+        text-align: center;
+    }
+    .hero div .hero-heading{
+        display: none;
+    }
+    .hero .hero-heading_mobile{
+        display: block;
+        font-size: 45px;
+        margin-top: -35px;
+        color: #bc1823;
+    }
+    .hero{
+        width: 100%;
+        background-image: url("2.png");
+        background-position: center;
+        gap: 450px;
+    }
+    div .hero{
+        padding-left: 0;
+    }
+    /*About Section*/
+    .abt-sec{
+        width: 100%;
+        height: 500px;
+    }
+    .abt-sec .burger-image{
+        display: none;
+    }
+    .abt-sec .abt-txt {
+        text-align: center;
+        padding-right: 35px;
+    }
+    /*catalog-sec*/
+    .catalog-sec{
+        height: 750px;
+    }
+    .catalog-sec .catalog-menu{
+        display: flex;
+        flex-direction: column;
+    }
+    .catalog-sec .catalog-menu div{
+        flex: auto;
+        height: 200px;
+        background-color: #fff;
+        text-align: center;
+        border-radius: 30px;
+        padding-top: 25px;
+        width: 80%;
+        margin: auto;
+        padding-bottom: 10px;
+     
+    }
+    .catalog-sec .catalog-menu div img{
+        width: 75px;
+        height: 75px;
+    }
+    .catalog-sec .catalog_btn{
+        margin-top: 65px;
+    }
+    .catalog-sec .cataog-top{
+        text-align: center;
+        margin-bottom: 45px;
+    }
+    /*Review Section*/
+    .review_container{
+        width: 100%;
+        height: 850px;
+    }
+    .reviews{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .review_container  .reviews .review_col .review_profiles img{
+        width: 75px;
+        height:75px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    /*Footer Section*/
+    .footer_sec{
+        width: 100%;
+        height: 550px;
+    }
+    .footer_col_left{
+        width: 50%;
+
+    }
+    .footer_col_right{
+        width: 50%;
+        font-size: 15px;
+    }
+    .footer_sec .footer_col_right .email-sec{
+        text-align: left;
+    }
+    /*Header_Section*/
+    .hamburger {
+    display: block;
+    text-align: center;
+    background-color: #ff0000;
+    width: 5px;
+    height: 40px;
+    align-content: center;
+    border: 3px solid #fff;
+    border-radius: 50px;
+    }
+    .nav-menu {
+    flex-direction: column;
+    padding-left: 35px;
+    position: absolute;
+    font-size: 25px;
+    gap: 45px;
+    top: 175px;
+    right: 0;
+    background-color: #dc0000;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    display: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: start;
+    }
+    .nav-menu.active {
+    display: flex;
+    }
+    .nav-menu a.active {
+    border-bottom: #fff 3px solid;
+    }
+}
