@@ -72,7 +72,7 @@ h1{
     margin-bottom: 10px;
 }
 .form_Sec .msg_field{
-    height: 200px;
+    height: 125px;
     width: 100%;
 
 }
@@ -89,6 +89,7 @@ h1{
     display: flex;
     flex-direction: column;
     gap: 25px;
+    padding-left: 25px;
 }
 .form_map{
     text-align: center;
@@ -165,7 +166,7 @@ h1{
         flex-direction: column;
     }
     .contact_form{
-        height: 1050px;
+        height: 1150px;
         display: flex;
         flex-direction: column;
         gap: 30px;
@@ -189,11 +190,12 @@ h1{
     }
     .footer_col_left{
         width: 50%;
+        margin-left: -25px;
 
     }
     .footer_col_right{
         width: 50%;
-        font-size: 15px;
+        font-size: 14px;
     }
     .footer_sec .footer_col_right .email-sec{
         text-align: left;
