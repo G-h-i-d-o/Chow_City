@@ -203,11 +203,11 @@ h1{
     margin: 0;
     }
     .burger_sec .burger_container .burger_items .meta_menu .price{
-    width: 45%;
+    width: 55%;
     height: 45px;
     }
     .burger_sec .burger_container .burger_items .meta_menu .cart_btn{
-    width: 55%;
+    width: 45%;
     }
     /*Footer Section*/
     .footer_sec{
