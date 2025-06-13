@@ -30,17 +30,12 @@
         <div class="form_container">
             <div class="form_Sec">
                 <h3>Please fill in the form below:</h3>
-                <form>
-                    <!-- <label for="fName">First Name:</label> -->
-                    <input type="text" id="fName" name="fName" placeholder="Name" class="name_field"><br>
-                    <!-- <label for="lName">email:</label> -->
-                    <input type="text" id="email" name="email" placeholder="Email" class="email_field"><br>
-                    <!-- <label for="subject">Subject</label> -->
-                    <input type="text" id="subject" name="subject" placeholder="Subject" class="subject"><br>
-                    <!-- <label for="lName">Message:</label> -->
-                    <input type="text" id="lName" name="lName" placeholder="Message" class="msg_field"><br>
-                    <!-- <input type="button" value="Submit" class="submit_btn"> -->
-                    <button class="submit_btn"><a href="https://wa.me/27642261364?text=Hello%20Chow%20City%2C%20I'm%20interested%20in%20your%20services" rel="noopener noreferrer" target="_blank" style="text-decoration: none; color: #fff;">Submit</a></button>
+                <form id="whatsappForm" onsubmit="sendToWhatsApp(); return false;">
+                    <input type="text" id="fName" name="fName" placeholder="Name" class="name_field" required><br>
+                    <input type="email" id="email" name="email" placeholder="Email" class="email_field" required><br>
+                    <input type="text" id="subject" name="subject" placeholder="Subject" class="subject" required><br>
+                    <input type="text" id="lName" name="lName" placeholder="Message" class="msg_field" required><br>
+                    <button type="submit" class="submit_btn">Submit</button>
                 </form>
             </div>
             <div class="form_txt">
